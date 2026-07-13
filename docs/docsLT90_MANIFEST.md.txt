@@ -1,0 +1,355 @@
+LT90 MANIFEST
+El Manifiesto del Ecosistema LT90
+
+Versión 1.0
+
+1. LT90 NO ES UNA TIENDA
+
+LT90 jamás será entendido como un ecommerce tradicional.
+
+No existen clientes.
+
+No existen compradores.
+
+No existen usuarios.
+
+Toda persona que entra a LT90 toma una decisión.
+
+La decisión de pertenecer.
+
+Por eso nuestro lema principal es:
+
+LA PERTENENCIA ES UNA DECISIÓN.
+
+2. EL ECOSISTEMA
+
+LT90 está compuesto por cinco espacios.
+
+Landing
+
+Es el llamado.
+
+No vende.
+
+No explica demasiado.
+
+Genera curiosidad.
+
+Invita a responder la convocatoria.
+
+Drop
+
+Es la convocatoria activa.
+
+Cada Drop posee identidad propia.
+
+Ejemplo
+
+DROP 001 — WORLD
+
+Cada Drop representa un momento irrepetible.
+
+Core
+
+El Core nunca desaparece.
+
+Siempre existe.
+
+Es la puerta de entrada para quienes desean pertenecer cuando no existe una convocatoria activa.
+
+El Core contiene únicamente productos permanentes.
+
+Ejemplos
+
+Passport LT90
+Stickers
+Core Tee
+Accesorios permanentes
+
+El Core jamás reemplaza un Drop.
+
+Archivo
+
+El Archivo conserva la historia completa de LT90.
+
+No vende.
+
+Documenta.
+
+Cada Drop terminado permanece para siempre.
+
+Club
+
+El Club pertenece únicamente a los miembros.
+
+Es el espacio privado del ecosistema.
+
+3. LOS MIEMBROS
+
+Toda persona que participa por primera vez obtiene una identidad permanente.
+
+Ejemplo
+
+Miembro #00001
+
+Miembro #00002
+
+Miembro #00003
+
+Ese número nunca cambia.
+
+Nunca se reutiliza.
+
+Nunca puede ser reasignado.
+
+Jamás existirá otro miembro con el mismo número.
+
+4. FOUNDING MEMBERS
+
+Los primeros noventa miembros del ecosistema reciben el estatus permanente de:
+
+FOUNDING MEMBER
+
+Corresponden a:
+
+#00001
+
+↓
+
+#00090
+
+Este privilegio jamás desaparece.
+
+Incluso décadas después seguirán siendo Founding Members.
+
+5. EL SISTEMA DE NUMERACIÓN
+
+Cada número representa una identidad.
+
+No representa un pedido.
+
+No representa una compra.
+
+Representa pertenencia.
+
+6. LOS PRODUCTOS
+
+Cada producto posee identidad individual.
+
+Ejemplo
+
+WORLD Jersey
+
+090 / 090
+
+Ese número pertenece únicamente a esa unidad.
+
+No existe otra igual.
+
+7. LOS DROPS LIMITADOS
+
+Cada Drop define sus propias cantidades.
+
+Ejemplo
+
+WORLD Jersey
+
+90 unidades
+
+No existen reposiciones.
+
+No existen reimpresiones.
+
+No existen segundas ediciones.
+
+Una vez terminado el Drop:
+
+permanece únicamente en el Archivo.
+
+8. REGLAS DE COMPRA
+
+Durante un Drop activo:
+
+Un miembro únicamente puede comprar una unidad de un mismo modelo.
+
+Ejemplo
+
+Puede comprar
+
+✓ WORLD Jersey
+
+✓ WORLD Snapback
+
+✓ WORLD Gloves
+
+Pero NO puede comprar
+
+✗ dos WORLD Jersey
+
+✗ tres WORLD Jersey
+
+✗ cinco WORLD Jersey
+
+El sistema bloqueará automáticamente cualquier intento de adquirir nuevamente el mismo modelo.
+
+Esta regla garantiza igualdad para toda la comunidad.
+
+9. CORE
+
+Las prendas Core no poseen limitación por modelo.
+
+Pueden ser adquiridas nuevamente.
+
+El Core representa permanencia.
+
+Los Drops representan historia.
+
+10. EL NFC
+
+LT90 utiliza tecnología NFC.
+
+El NFC NO almacena información.
+
+El NFC funciona únicamente como una llave.
+
+Toda la información vive dentro del ecosistema LT90.
+
+Al acercar el NFC, el sistema puede mostrar:
+
+• autenticidad
+
+• propietario
+
+• número de miembro
+
+• historia del producto
+
+• fecha del Drop
+
+• certificado
+
+• eventos especiales
+
+11. EL PASSPORT
+
+El Passport LT90 es el documento oficial del miembro.
+
+Puede registrar:
+
+Drops obtenidos
+
+Eventos
+
+Participaciones
+
+Credenciales
+
+Beneficios
+
+No es un accesorio.
+
+Es una identidad.
+
+12. EL LENGUAJE LT90
+
+LT90 jamás utilizará lenguaje de ecommerce tradicional.
+
+Nunca escribir:
+
+Cliente
+
+Usuario
+
+Producto
+
+Comprar ahora
+
+Login
+
+Registrarse
+
+Stock
+
+Oferta
+
+Descuento
+
+Carrito
+
+Checkout
+
+En su lugar utilizar:
+
+Miembro
+
+Credencial
+
+Pertenencia
+
+Convocatoria
+
+Acudir al llamado
+
+Drop
+
+Core
+
+Archivo
+
+Passport
+
+Founding Member
+
+Club
+
+Objeto de pertenencia
+
+13. EL DISEÑO
+
+LT90 comunica lujo mediante silencio.
+
+No mediante exceso.
+
+Mucho espacio.
+
+Pocas palabras.
+
+Movimiento lento.
+
+Animaciones elegantes.
+
+Nada debe sentirse agresivo.
+
+Nada debe parecer una tienda convencional.
+
+14. EL TIEMPO
+
+Los Drops funcionan mediante convocatorias.
+
+La Landing siempre anuncia el próximo llamado.
+
+El reloj representa espera.
+
+Cuando llega a cero:
+
+la convocatoria comienza.
+
+15. LA MISIÓN
+
+LT90 no busca vender ropa.
+
+Busca construir una comunidad con identidad.
+
+Cada prenda representa un recuerdo.
+
+Cada miembro representa una historia.
+
+Cada Drop representa un capítulo.
+
+El ecosistema siempre deberá responder una única pregunta:
+
+¿Este cambio fortalece el sentido de pertenencia?
+
+Si la respuesta es no,
+
+el cambio no pertenece a LT90.

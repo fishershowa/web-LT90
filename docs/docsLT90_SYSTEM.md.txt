@@ -1,0 +1,373 @@
+LT90 SYSTEM
+Arquitectura del Ecosistema LT90
+
+Versión 1.0
+
+1. PRINCIPIO
+
+LT90 no administra ventas.
+
+LT90 administra pertenencia.
+
+Toda la arquitectura del sistema existe para proteger esa pertenencia.
+
+2. MIEMBROS
+
+Una persona solamente puede convertirse en miembro una vez.
+
+En el momento en que participa exitosamente por primera vez, el sistema genera automáticamente:
+
+Número permanente.
+Passport LT90.
+Credencial digital.
+Perfil del Club.
+
+Ejemplo
+
+Miembro
+
+#00001
+
+Ese número nunca cambia.
+
+Nunca desaparece.
+
+Nunca puede volver a asignarse.
+
+3. NUMERACIÓN
+
+Los números siempre son consecutivos.
+
+Ejemplo
+
+#00001
+
+#00002
+
+#00003
+
+...
+
+No existen huecos.
+
+No existen reinicios.
+
+No existen temporadas.
+
+La numeración representa toda la historia de LT90.
+
+4. FOUNDING MEMBERS
+
+Los primeros noventa miembros reciben automáticamente:
+
+FOUNDING MEMBER
+
+Ese estado queda almacenado para siempre.
+
+Jamás puede eliminarse.
+
+Jamás puede venderse.
+
+Jamás puede heredarse.
+
+5. PASSPORT
+
+Cada miembro posee un Passport.
+
+El Passport registra:
+
+Número.
+
+Fecha de ingreso.
+
+Drops obtenidos.
+
+Core adquirido.
+
+Eventos.
+
+Invitaciones.
+
+Certificados.
+
+NFC vinculados.
+
+Logros.
+
+Historial.
+
+El Passport representa la historia completa del miembro.
+
+6. CREDENCIAL
+
+La Credencial permite acceder al Club.
+
+No representa una cuenta.
+
+Representa identidad.
+
+7. DROPS
+
+Cada Drop posee:
+
+Nombre.
+
+Código.
+
+Fecha.
+
+Cantidad.
+
+Historia.
+
+Estado.
+
+Ejemplo
+
+DROP 001
+
+WORLD
+
+90 Jerseys
+
+90 Snapbacks
+
+90 Gloves
+
+Cada pieza existe únicamente una vez.
+
+8. PRODUCTOS
+
+Cada unidad posee identidad individual.
+
+Ejemplo
+
+WORLD Jersey
+
+Unidad
+
+023 / 090
+
+Ese número pertenece únicamente a esa unidad.
+
+Jamás cambia.
+
+9. REGLA DE COMPRA
+
+Durante un mismo Drop:
+
+Un miembro solamente puede adquirir una unidad de cada modelo.
+
+Ejemplo
+
+Puede comprar:
+
+WORLD Jersey
+
+WORLD Snapback
+
+WORLD Gloves
+
+Pero nunca:
+
+dos WORLD Jersey.
+
+cinco WORLD Jersey.
+
+noventa WORLD Jersey.
+
+El sistema bloqueará automáticamente la compra.
+
+10. CORE
+
+Core funciona distinto.
+
+Los productos Core son permanentes.
+
+No poseen límite por miembro.
+
+Siempre estarán disponibles.
+
+Nunca sustituyen un Drop.
+
+11. NFC
+
+Cada producto puede incorporar un chip NFC.
+
+El NFC jamás almacena datos.
+
+El NFC únicamente contiene un identificador seguro.
+
+Toda la información vive dentro de LT90.
+
+12. INFORMACIÓN NFC
+
+Al escanear un NFC pueden mostrarse:
+
+Autenticidad.
+
+Drop.
+
+Número de unidad.
+
+Miembro propietario.
+
+Fecha de adquisición.
+
+Certificado.
+
+Historial.
+
+Eventos relacionados.
+
+Nunca información privada sensible.
+
+13. TRANSFERENCIA
+
+Un producto puede cambiar de propietario.
+
+La propiedad cambia.
+
+La historia no.
+
+Siempre permanecerán registrados:
+
+Primer propietario.
+
+Segundo propietario.
+
+Tercer propietario.
+
+Etc.
+
+LT90 protege la historia del objeto.
+
+14. CERTIFICADOS
+
+Cada producto limitado posee un certificado digital.
+
+Nunca puede duplicarse.
+
+Siempre permanece asociado a esa unidad.
+
+15. ARCHIVO
+
+Todo Drop terminado pasa automáticamente al Archivo.
+
+Nunca desaparece.
+
+Nunca puede eliminarse.
+
+Representa la memoria histórica de LT90.
+
+16. CLUB
+
+El Club muestra:
+
+Passport.
+
+Número.
+
+Colección.
+
+Eventos.
+
+Logros.
+
+Beneficios.
+
+Nunca muestra publicidad.
+
+Nunca parece una tienda.
+
+17. DASHBOARD
+
+El administrador controla:
+
+Landing.
+
+Reloj.
+
+Videos.
+
+Drops.
+
+Core.
+
+Archivo.
+
+Productos.
+
+Fotografías.
+
+Miembros.
+
+Founding Members.
+
+Eventos.
+
+Mensajes.
+
+Beneficios.
+
+NFC.
+
+Pedidos.
+
+Transferencias.
+
+Invitaciones.
+
+Estadísticas.
+
+Sin editar código.
+
+18. ESTADOS DEL SISTEMA
+
+Landing
+
+↓
+
+Drop Activo
+
+↓
+
+Drop Cerrado
+
+↓
+
+Archivo
+
+Toda convocatoria sigue exactamente ese ciclo.
+
+19. SEGURIDAD
+
+Jamás modificar:
+
+Número del miembro.
+
+Número de unidad.
+
+Historia del producto.
+
+Historia del Passport.
+
+Estos registros son permanentes.
+
+20. FILOSOFÍA
+
+Cada línea de código debe proteger una sola idea.
+
+La pertenencia.
+
+No estamos construyendo un ecommerce.
+
+Estamos construyendo un ecosistema.
+
+Toda nueva funcionalidad deberá responder esta pregunta:
+
+¿Fortalece el sentido de pertenencia?
+
+Si la respuesta es no,
+
+no pertenece a LT90.

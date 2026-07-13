@@ -1,0 +1,383 @@
+LT90 ADMIN RULES
+Reglamento del Centro de Comando LT90
+
+Versión 1.0
+
+PRINCIPIO
+
+El Dashboard no existe para administrar una tienda.
+
+Existe para proteger el ecosistema LT90.
+
+Toda acción realizada desde el Centro de Comando debe preservar el sentido de pertenencia.
+
+1. LOS NÚMEROS SON SAGRADOS
+
+Está prohibido modificar manualmente:
+
+Número de Miembro.
+Número de Unidad.
+Founding Member.
+Historial del Passport.
+
+Estos registros son permanentes.
+
+2. FOUNDING MEMBERS
+
+Los miembros #00001 al #00090 reciben automáticamente el rango:
+
+FOUNDING MEMBER
+
+Este estado:
+
+no puede eliminarse;
+no puede editarse;
+no puede venderse;
+no puede transferirse.
+3. VETERANOS
+
+Un miembro obtiene el rango:
+
+VETERANO
+
+cuando completa 10 Drops diferentes.
+
+El rango se calcula automáticamente.
+
+Nunca se asigna manualmente.
+
+4. ACCESO ANTICIPADO
+
+El Acceso Anticipado únicamente puede enviarse a:
+
+Founding Members.
+Veteranos.
+
+Ningún otro miembro podrá recibir invitaciones anticipadas.
+
+5. INVITACIONES
+
+Cada invitación posee:
+
+código único;
+expiración;
+uso único;
+vínculo directo con el ID del miembro.
+
+Una invitación jamás podrá reutilizarse.
+
+6. DROPS
+
+Cada Drop debe contener:
+
+Nombre.
+
+Código.
+
+Historia.
+
+Fecha.
+
+Hora.
+
+Cantidad.
+
+Estado.
+
+Productos.
+
+Imágenes.
+
+Video.
+
+Nunca podrá activarse un Drop incompleto.
+
+7. PRODUCTOS
+
+Cada producto debe poseer:
+
+Nombre.
+
+Modelo.
+
+Drop.
+
+Cantidad.
+
+Precio.
+
+Imágenes.
+
+Estado.
+
+Si el producto es limitado:
+
+el sistema genera automáticamente todas sus unidades.
+
+Ejemplo
+
+001/090
+
+↓
+
+090/090
+
+Nunca manualmente.
+
+8. INVENTARIO INVERSO
+
+LT90 trabaja con inventario inverso.
+
+Las unidades existen desde el primer momento.
+
+No se crean al venderse.
+
+Se reservan.
+
+Se asignan.
+
+Se bloquean.
+
+9. REGLA DE COMPRA
+
+Durante un Drop:
+
+Un miembro solamente puede adquirir una unidad de un mismo modelo.
+
+Ejemplo:
+
+✓ WORLD Jersey
+
+✓ WORLD Gloves
+
+✓ WORLD Snapback
+
+✗ Dos WORLD Jersey.
+
+El Dashboard jamás podrá desactivar esta regla.
+
+10. CORE
+
+Los productos Core no poseen restricción por miembro.
+
+Siempre estarán disponibles.
+
+Nunca aparecen como Founding Edition.
+
+11. PASSPORT
+
+El Dashboard únicamente puede:
+
+agregar registros.
+
+Nunca eliminar registros.
+
+Toda la historia permanece.
+
+12. NFC
+
+Cada NFC pertenece únicamente a un producto.
+
+Nunca puede asignarse a dos objetos distintos.
+
+Si un NFC se reemplaza,
+
+el anterior queda invalidado permanentemente.
+
+13. TRANSFERENCIA
+
+Cuando un producto cambia de propietario:
+
+se actualiza el propietario actual;
+
+se conserva el historial completo.
+
+Nunca se elimina un propietario anterior.
+
+14. ARCHIVO
+
+Un Drop terminado:
+
+nunca puede editar su cantidad.
+
+nunca puede editar sus unidades.
+
+nunca puede desaparecer.
+
+Únicamente puede corregirse información descriptiva.
+
+15. LANDING
+
+Desde el Dashboard se puede modificar:
+
+Video.
+
+Fecha del reloj.
+
+Texto.
+
+Estado del botón.
+
+Nunca la filosofía.
+
+16. CENTRO DE COMANDO
+
+El Dashboard deberá contener como mínimo:
+
+Landing
+
+Administrar video.
+
+Administrar reloj.
+
+Administrar mensajes.
+
+Drops
+
+Crear.
+
+Editar.
+
+Publicar.
+
+Cerrar.
+
+Archivar.
+
+Core
+
+Administrar colección permanente.
+
+Archivo
+
+Consultar historial.
+
+Miembros
+
+Buscar.
+
+Consultar Passport.
+
+Consultar historial.
+
+Consultar rango.
+
+Acceso Anticipado
+
+Generar invitaciones.
+
+Enviar invitaciones.
+
+Consultar invitaciones utilizadas.
+
+Revocar invitaciones.
+
+NFC
+
+Registrar.
+
+Consultar.
+
+Invalidar.
+
+Transferir.
+
+Analítica
+
+Visitas.
+
+Conversión.
+
+Miembros nuevos.
+
+Drops.
+
+Core.
+
+Sistema
+
+Configuraciones generales.
+
+17. PROHIBIDO
+
+Nunca utilizar dentro del Dashboard palabras como:
+
+Clientes.
+
+Usuarios.
+
+Productos.
+
+Pedidos.
+
+Checkout.
+
+Carrito.
+
+Stock.
+
+Descuentos.
+
+Promociones.
+
+Ofertas.
+
+18. LENGUAJE LT90
+
+Siempre utilizar:
+
+Miembros.
+
+Passport.
+
+Credencial.
+
+Drop.
+
+Core.
+
+Archivo.
+
+Acceso Anticipado.
+
+Founding Members.
+
+Veteranos.
+
+Centro de Comando.
+
+Panel de Suministros.
+
+Equipamiento.
+
+Pertenencia.
+
+19. RESPONSABILIDAD
+
+Toda modificación realizada desde el Dashboard debe quedar registrada.
+
+El sistema almacenará:
+
+Administrador.
+
+Fecha.
+
+Hora.
+
+Acción realizada.
+
+Nunca existirá una modificación sin historial.
+
+REGLA FINAL
+
+El Centro de Comando no administra ventas.
+
+Administra historia.
+
+Cada acción debe responder una pregunta:
+
+¿Estoy fortaleciendo la pertenencia o simplemente administrando una tienda?
+
+Si parece una tienda,
+
+la decisión es incorrecta.

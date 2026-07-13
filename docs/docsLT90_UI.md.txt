@@ -1,0 +1,273 @@
+LT90 UI
+Sistema de Diseño del Ecosistema LT90
+
+Versión 1.0
+
+PRINCIPIO 01
+EL SILENCIO ES LUJO
+
+Una pantalla vacía comunica más que una pantalla llena.
+
+Cada elemento debe respirar.
+
+Nunca llenar espacios por miedo al vacío.
+
+PRINCIPIO 02
+EL NEGRO ES EL LIENZO
+
+El negro absoluto es el color principal.
+
+No representa oscuridad.
+
+Representa espacio.
+
+Todo ocurre sobre él.
+
+PRINCIPIO 03
+EL BLANCO ES INFORMACIÓN
+
+El blanco nunca es decoración.
+
+El blanco comunica.
+
+Mientras menos blanco exista,
+
+más importante será.
+
+PRINCIPIO 04
+EL COLOR ES UNA RECOMPENSA
+
+El dorado.
+
+El plateado.
+
+El azul eléctrico.
+
+Nunca aparecen gratuitamente.
+
+Deben representar un logro.
+
+Un evento.
+
+Una edición.
+
+Un Founding Member.
+
+Nunca decoración.
+
+PRINCIPIO 05
+TODO DEBE MOVERSE LENTO
+
+No existen animaciones rápidas.
+
+No existen rebotes.
+
+No existen efectos llamativos.
+
+Todo debe sentirse pesado.
+
+Como un museo.
+
+Como una galería.
+
+Como una pieza de lujo.
+
+PRINCIPIO 06
+EL VIDEO ES PARTE DEL DISEÑO
+
+El video nunca compite con el contenido.
+
+El video acompaña.
+
+Debe moverse lentamente.
+
+Debe parecer infinito.
+
+Nunca distraer.
+
+PRINCIPIO 07
+EL LOGOTIPO
+
+El escudo siempre posee prioridad visual.
+
+Nunca competir con texto gigante.
+
+Nunca duplicar la marca innecesariamente.
+
+El escudo representa LT90.
+
+PRINCIPIO 08
+LAS PALABRAS SON DISEÑO
+
+No escribir mucho.
+
+Cada frase debe sentirse importante.
+
+Ejemplos.
+
+LA PERTENENCIA ES UNA DECISIÓN.
+
+EL LLAMADO HA COMENZADO.
+
+FOUNDING MEMBER.
+
+WORLD.
+
+CORE.
+
+ARCHIVO.
+
+Nada más.
+
+PRINCIPIO 09
+LOS BOTONES
+
+LT90 no utiliza botones tradicionales.
+
+Evitar:
+
+bordes gruesos
+
+sombras
+
+gradientes exagerados
+
+colores fuertes
+
+Preferir:
+
+líneas
+
+espacio
+
+tracking
+
+animaciones sutiles
+
+PRINCIPIO 10
+EL HOVER
+
+Todo hover debe sentirse vivo.
+
+Nunca agresivo.
+
+Ejemplos:
+
+las líneas crecen lentamente.
+
+el tracking aumenta.
+
+la opacidad cambia.
+
+nunca saltos bruscos.
+
+PRINCIPIO 11
+EL RELOJ
+
+El reloj no representa tiempo.
+
+Representa expectativa.
+
+Debe ser el corazón de la Landing.
+
+Siempre elegante.
+
+Nunca parecer un contador cualquiera.
+
+PRINCIPIO 12
+EL DROP
+
+No parece una tienda.
+
+Parece una exposición.
+
+Cada producto tiene espacio.
+
+Cada producto tiene historia.
+
+PRINCIPIO 13
+EL ARCHIVO
+
+No parece un historial.
+
+Parece un museo.
+
+Cada Drop terminado permanece vivo.
+
+PRINCIPIO 14
+EL CORE
+
+El Core transmite permanencia.
+
+Nunca urgencia.
+
+No existe FOMO.
+
+Siempre estará disponible.
+
+PRINCIPIO 15
+EL CLUB
+
+El Club debe sentirse privado.
+
+No exclusivo por lujo.
+
+Exclusivo por pertenencia.
+
+Cuando un miembro entra,
+
+debe sentir:
+
+"Aquí pertenezco."
+
+PRINCIPIO 16
+EL PANEL ADMIN
+
+El Dashboard nunca debe parecer un CMS.
+
+Debe sentirse como el centro de control de una organización.
+
+No de una tienda.
+
+PRINCIPIO 17
+CADA PANTALLA RESPONDE UNA PREGUNTA
+
+Landing
+
+¿Por qué debería importar LT90?
+
+Drop
+
+¿Qué está ocurriendo ahora?
+
+Core
+
+¿Cómo puedo pertenecer?
+
+Archivo
+
+¿Qué historia estoy viendo?
+
+Club
+
+¿Quién soy dentro de LT90?
+
+Dashboard
+
+¿Cómo construimos LT90?
+
+REGLA FINAL
+
+Antes de aprobar cualquier cambio,
+
+hacer una sola pregunta.
+
+¿Esto parece una tienda?
+
+Si la respuesta es sí,
+
+debe rediseñarse.
+
+Si la respuesta es no,
+
+probablemente pertenece a LT90.

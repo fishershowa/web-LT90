@@ -1,0 +1,320 @@
+LT90 ROADMAP
+Hoja de Ruta Oficial del Ecosistema LT90
+
+Versión 1.0
+
+MISIÓN
+
+Construir un ecosistema digital donde la pertenencia tenga más valor que la compra.
+
+Toda funcionalidad nueva deberá fortalecer esta idea.
+
+FASE 01
+Identidad
+
+Estado: ✅ COMPLETADA
+
+Landing Page
+Video Hero
+Cuenta regresiva
+Botón "Acudir al Llamado"
+Navegación principal
+Core
+Archivo
+Club (estructura)
+Centro de Comando (estructura)
+Identidad visual LT90
+Logo SVG
+Filosofía integrada
+FASE 02
+Arquitectura
+
+Estado: 🟡 EN PROGRESO
+
+Documentación del proyecto
+LT90_MANIFEST
+LT90_UI
+LT90_SYSTEM
+LT90_ADMIN_RULES
+LT90_ROADMAP
+
+Pendiente:
+
+Arquitectura definitiva de carpetas
+Variables globales LT90
+Sistema de configuración
+FASE 03
+Centro de Comando
+
+Estado: 🔲 Pendiente
+
+Construcción del Dashboard definitivo.
+
+Módulos:
+
+□ Landing
+
+□ Panel de Suministros
+
+□ Drops
+
+□ Core
+
+□ Archivo
+
+□ Miembros
+
+□ Passport
+
+□ Acceso Anticipado
+
+□ NFC
+
+□ Analítica
+
+□ Sistema
+
+FASE 04
+Miembros
+
+Estado: 🔲 Pendiente
+
+Integración Clerk.
+
+Objetivos:
+
+□ Registro
+
+□ Inicio de sesión
+
+□ Credencial
+
+□ Passport
+
+□ Número histórico
+
+□ Perfil
+
+□ Rango
+
+FASE 05
+Base de Datos
+
+Estado: 🔲 Pendiente
+
+Supabase.
+
+Construcción de:
+
+□ Miembros
+
+□ Drops
+
+□ Core
+
+□ Archivo
+
+□ Productos
+
+□ Passport
+
+□ NFC
+
+□ Historial
+
+□ Invitaciones
+
+□ Analytics
+
+FASE 06
+Sistema de Drops
+
+Estado: 🔲 Pendiente
+
+Construcción completa.
+
+□ Crear Drop
+
+□ Publicar
+
+□ Cerrar
+
+□ Archivar
+
+□ Generación automática 001/090
+
+□ Inventario inverso
+
+□ Compra única por modelo
+
+FASE 07
+Core
+
+Estado: 🔲 Pendiente
+
+Colección permanente.
+
+□ Productos infinitos
+
+□ Gestión independiente
+
+□ Sin límite por miembro
+
+FASE 08
+Acceso Anticipado
+
+Estado: 🔲 Pendiente
+
+Construcción del sistema de invitaciones.
+
+Solo para:
+
+Founding Members
+
+Veteranos
+
+Incluye:
+
+□ Generador de claves
+
+□ Envío con Resend
+
+□ Validación
+
+□ Expiración
+
+□ Uso único
+
+FASE 09
+Pagos
+
+Estado: 🔲 Pendiente
+
+Integración:
+
+Mercado Pago
+
+Stripe
+
+Nunca Shopify.
+
+Nunca Flow.
+
+FASE 10
+NFC
+
+Estado: 🔲 Pendiente
+
+Sistema completo.
+
+□ Registro
+
+□ Verificación
+
+□ Transferencias
+
+□ Historial
+
+□ Certificados
+
+FASE 11
+Passport
+
+Estado: 🔲 Pendiente
+
+Cada miembro tendrá:
+
+□ Historial
+
+□ Colección
+
+□ Eventos
+
+□ Convocatorias
+
+□ Certificados
+
+□ NFC
+
+□ Logros
+
+FASE 12
+Analítica
+
+Estado: 🔲 Pendiente
+
+Cloudflare
+
+PostHog
+
+Sentry
+
+Objetivos:
+
+□ Rendimiento
+
+□ Errores
+
+□ Conversión
+
+□ Actividad del Club
+
+FASE 13
+Optimización
+
+Estado: 🔲 Pendiente
+
+□ SEO
+
+□ Rendimiento
+
+□ Accesibilidad
+
+□ Responsive
+
+□ Lighthouse 100
+
+FASE 14
+Producción
+
+Estado: 🔲 Pendiente
+
+□ Dominio
+
+□ Cloudflare
+
+□ SSL
+
+□ Deploy
+
+□ Monitoreo
+
+□ Backups
+
+VISIÓN
+
+LT90 nunca terminará.
+
+Cada Drop añadirá una nueva capa de historia.
+
+Cada miembro añadirá una nueva página al ecosistema.
+
+Cada producto contará una historia.
+
+No construiremos una tienda.
+
+Construiremos un legado.
+
+REGLA FINAL
+
+Antes de comenzar cualquier nueva funcionalidad, responder siempre:
+
+¿Fortalece la pertenencia?
+¿Respeta el lenguaje LT90?
+¿Se siente premium?
+¿Protege la historia del miembro?
+¿Protege la historia del producto?
+
+Si alguna respuesta es "no",
+
+la funcionalidad debe replantearse antes de escribirse.
