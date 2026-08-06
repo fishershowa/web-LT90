@@ -11,9 +11,8 @@ export function Navigation() {
 
   const isActive = (path: string) => pathname === path
 
- const navItems = [
-  { label: 'Club', href: '/club', requireAuth: true },
-  { label: 'Archivo', href: '/archive' },
+const navItems = [
+  { label: 'Expediente', href: '/expediente' },
   { label: 'Core', href: '/core' },
 ]
 
@@ -25,35 +24,45 @@ export function Navigation() {
           <div className="flex items-center gap-8 justify-self-start">
              <Link href="/">
     <Image
-      src="/logo/lt90.svg"
-      alt="LT90"
-      width={90}
-      height={28}
-      priority
-      className="opacity-90 hover:opacity-100 transition-opacity duration-300"
-    />
+  src="/logo/lt90.svg"
+  alt="LT90"
+  width={120}
+  height={38}
+  priority
+  className="opacity-95 hover:opacity-100 transition-all duration-500"
+ />
   </Link>
             {navItems.map((item) => {
-              if (item.requireAuth && role === 'guest') return null
+              
 
               return (
                 <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`text-sm tracking-widest uppercase transition-colors duration-300 ${
-                    isActive(item.href)
-                      ? 'text-white'
-                      : 'text-white/60 hover:text-white'
-                  }`}
-                >
-                  {item.label}
-                </Link>
+  key={item.href}
+  href={item.href}
+  className={`
+    group
+    relative
+    text-[13px]
+    uppercase
+    font-light
+    tracking-[0.30em]
+    transition-all
+    duration-500
+    ${
+      isActive(item.href)
+        ? 'text-white'
+        : 'text-white/60 hover:text-white hover:tracking-[0.42em]'
+    }
+  `}
+>
+  {item.label}
+</Link>
               )
             })}
           </div>
 <div className="flex justify-center">
   <p className="text-[11px] md:text-xs uppercase tracking-[0.45em] text-white/70 font-light whitespace-nowrap">
-    LA PERTENENCIA ES UNA DECISIÓN.
+    LA PERTENENCIA ES UNA DECISIÓN
   </p>
 </div>
           {/* Right Side Actions */}
@@ -80,24 +89,28 @@ export function Navigation() {
                     : 'text-white/60 hover:text-white'
                 }`}
               >
-                Mi Cuenta
+                Pasaporte
               </Link>
             )}
 
             {role === 'guest' && (
-             <Link
-  href="/account"
-  className="group flex flex-col items-center cursor-pointer"
->
-  <div className="w-16 h-px bg-white/20 transition-all duration-500 group-hover:w-24 group-hover:bg-white/50"></div>
-
-  <span className="py-2 text-[11px] tracking-[0.35em] uppercase text-white font-light transition-all duration-500 group-hover:tracking-[0.5em]">
-    Credencial
-  </span>
-
-  <div className="w-16 h-px bg-white/20 transition-all duration-500 group-hover:w-24 group-hover:bg-white/50"></div>
-</Link>
-            )}
+  <Link
+    href="/account"
+    className="
+      text-[11px]
+      uppercase
+      tracking-[0.35em]
+      text-white/70
+      font-light
+      transition-all
+      duration-500
+      hover:text-white
+      hover:tracking-[0.45em]
+    "
+  >
+    Pasaporte
+  </Link>
+)}
 
             {role !== 'guest' && (
               <button

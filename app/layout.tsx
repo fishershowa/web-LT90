@@ -1,6 +1,8 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { AuthProvider } from '@/lib/auth-context'
+import { PurchaseProvider } from '@/contexts/PurchaseContext'
+import { UserProvider } from '@/contexts/UserContext'
 import { Navigation } from '@/components/navigation'
 import './globals.css'
 
@@ -37,9 +39,20 @@ export default function RootLayout({
     <html lang="en" className="bg-black">
       <body className="antialiased bg-black">
         <AuthProvider>
-          <Navigation />
-          {children}
-        </AuthProvider>
+
+  <UserProvider>
+
+    <PurchaseProvider>
+
+      <Navigation />
+
+      {children}
+
+    </PurchaseProvider>
+
+  </UserProvider>
+
+</AuthProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

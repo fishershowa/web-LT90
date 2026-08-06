@@ -73,8 +73,26 @@ export function CountdownTimer({ targetDate, onComplete }: CountdownTimerProps) 
 
   const TimeUnit = ({ value, label }: { value: number; label: string }) => (
     <div className="flex flex-col items-center gap-2">
-      <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tighter min-w-[80px] md:min-w-[100px] lg:min-w-[120px] text-center">
-        {String(value).padStart(2, '0')}
+<div
+  className="
+    text-4xl
+    md:text-5xl
+    lg:text-6xl
+    font-bold
+    tracking-tighter
+    min-w-[80px]
+    md:min-w-[100px]
+    lg:min-w-[120px]
+    text-center
+    bg-gradient-to-b
+    from-white
+    via-gray-200
+    to-gray-400
+    bg-clip-text
+    text-transparent
+    drop-shadow-[0_0_10px_rgba(255,255,255,0.06)]
+  "
+>        {String(value).padStart(2, '0')}
       </div>
       <div className="text-[10px] md:text-xs text-white/40 uppercase tracking-[0.45em] font-light">
         {label}

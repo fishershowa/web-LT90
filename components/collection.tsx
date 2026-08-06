@@ -142,55 +142,7 @@ export function Collection() {
         </div>
       </div>
 
-      {/* Grid View */}
-      {viewMode === 'grid' && (
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
-          <div className="mb-8 p-4 bg-black text-white text-center">
-            <p className="text-sm tracking-widest uppercase font-semibold">Enviamos a todo el mundo</p>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-12">WORLD</h1>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {mockPieces.map((piece) => (
-              <button
-                key={piece.id}
-                onClick={() => handleSelectPiece(piece)}
-                className="group cursor-pointer text-left"
-              >
-                <div className="relative mb-4 bg-white/5 aspect-square overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-300">
-                  {/* Badges */}
-                  <div className="absolute top-3 left-3 z-10 flex gap-2">
-                    <span className={`px-2 py-1 text-xs font-bold tracking-widest uppercase ${
-                      piece.badge === 'NEW_IN'
-                        ? 'bg-yellow-300 text-black'
-                        : 'bg-cyan-300 text-black'
-                    }`}>
-                      {piece.badge === 'NEW_IN' ? 'Nuevo' : 'Bestseller'}
-                    </span>
-                    <span className="px-2 py-1 text-xs font-bold tracking-widest uppercase bg-black text-white">
-                      90/90
-                    </span>
-                  </div>
-
-                  {/* Image */}
-                  <img
-                    src={piece.image}
-                    alt={piece.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                {/* Info */}
-                <h3 className="font-semibold text-sm tracking-wide mb-1 text-white group-hover:text-white/60 transition-colors duration-300">
-                  {piece.name}
-                </h3>
-                <p className="text-sm text-white/60">{piece.price.toFixed(2)} €</p>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
+      
       {/* Detail View */}
       {viewMode === 'detail' && selectedPiece && (
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
@@ -212,22 +164,8 @@ export function Collection() {
                 {selectedPiece.name}
               </h1>
 
-              {/* Badge */}
-              <div className="flex gap-2 mb-6">
-                <span className={`px-3 py-1 text-xs font-bold tracking-widest uppercase ${
-                  selectedPiece.badge === 'NEW_IN'
-                    ? 'bg-yellow-300 text-black'
-                    : 'bg-cyan-300 text-black'
-                }`}>
-                  {selectedPiece.badge === 'NEW_IN' ? 'Nuevo' : 'Bestseller'}
-                </span>
-                <span className="px-3 py-1 text-xs font-bold tracking-widest uppercase bg-black text-white">
-                  90/90
-                </span>
-              </div>
+              
 
-              {/* Price */}
-              <p className="text-3xl font-bold mb-6">{selectedPiece.price.toFixed(2)} €</p>
 
               {/* Description */}
               <p className="text-white/70 mb-8 leading-relaxed">
