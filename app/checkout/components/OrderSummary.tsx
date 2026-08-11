@@ -1,146 +1,185 @@
 'use client'
+
 import { usePurchase } from '@/contexts/PurchaseContext'
 import { useRouter } from 'next/navigation'
 
 export default function OrderSummary() {
 
-  const { purchase } = usePurchase()
+  const {
+    cart,
+    purchase,
+  } = usePurchase()
+
   const router = useRouter()
 
-  if (!purchase) return null
+  /*
+   * Compatibilidad con el sistema anterior.
+   */
+  const items =
+    cart.length > 0
+      ? cart
+      : purchase
+      ? [
+          {
+            ...purchase,
+            cantidad:
+              purchase.cantidad ?? 1,
+          },
+        ]
+      : []
+
+  if (items.length === 0) {
+    return null
+  }
+
+  const total = items.reduce(
+    (sum, item) =>
+      sum +
+      item.precio *
+        (item.cantidad ?? 1),
+    0
+  )
 
   return (
     <aside
       className="
         sticky
         top-20
-
         h-[calc(100vh-80px)]
         w-[330px]
-
         border
         border-white/10
-
         px-6
         py-6
-
         flex
         flex-col
       "
     >
-      {/* Imagen */}
 
-      <div className="flex justify-center">
-
-        <img
-          src={purchase.imagen}
-          alt="WORLD JERSEY"
-          className="
-            w-[145px]
-            h-auto
-            object-contain
-            select-none
-          "
-        />
-
-      </div>
-
-      {/* Producto */}
-
-      <div className="mt-5">
-
-        <p
-          className="
-            uppercase
-            tracking-[0.45em]
-            text-[9px]
-            text-white/20
-          "
-        >
-          DROP 001
-        </p>
-
-        <h3
-          className="
-            mt-2
-            uppercase
-            text-[17px]
-            font-extralight
-            tracking-[0.08em]
-          "
-        >
-          {purchase.nombre}
-        </h3>
-
-        <p
-          className="
-            mt-2
-            uppercase
-            tracking-[0.35em]
-            text-[10px]
-            text-white/45
-          "
-        >
-          {purchase.tipo === 'wearable'
-  ? `Talla ${purchase.talla}`
-  : 'Objeto de colección'}
-        </p>
-
-      </div>
-
-      {/* Total */}
+      {/* PRODUCTOS */}
 
       <div
         className="
-          mt-5
-          pt-5
-          border-t
-          border-white/10
+          flex-1
+          overflow-y-auto
+          space-y-7
         "
       >
 
-        <div className="flex justify-between items-center">
+        {items.map((item) => (
 
-          <span
+          <div
+            key={item.nombre}
             className="
-              uppercase
-              tracking-[0.35em]
-              text-[9px]
-              text-white/30
+              pb-6
+              border-b
+              border-white/10
             "
           >
-            TOTAL
-          </span>
 
-          <div className="flex items-end gap-2">
+            {/* IMAGEN */}
 
-            <span
+            <div
               className="
-                text-[16px]
-                font-extralight
+                flex
+                justify-center
               "
             >
-              {purchase.precio.toLocaleString('es-CL')}
-            </span>
+              <img
+                src={item.imagen}
+                alt={item.nombre}
+                className="
+                  w-[125px]
+                  h-auto
+                  object-contain
+                  select-none
+                "
+              />
+            </div>
 
-            <span
-              className="
-                uppercase
-                tracking-[0.30em]
-                text-[9px]
-                text-white/35
-              "
-            >
-              CLP
-            </span>
+            {/* PRODUCTO */}
+
+            <div className="mt-5">
+
+              <p
+                className="
+                  uppercase
+                  tracking-[0.45em]
+                  text-[9px]
+                  text-white/20
+                "
+              >
+                DROP 001
+              </p>
+
+              <h3
+                className="
+                  mt-2
+                  uppercase
+                  text-[16px]
+                  font-extralight
+                  tracking-[0.08em]
+                "
+              >
+                {item.nombre}
+              </h3>
+
+              <div
+                className="
+                  mt-3
+                  flex
+                  justify-between
+                  items-center
+                "
+              >
+
+                <p
+                  className="
+                    uppercase
+                    tracking-[0.30em]
+                    text-[10px]
+                    text-white/45
+                  "
+                >
+                  {item.tipo === 'wearable'
+                    ? `Talla ${item.talla}`
+                    : 'Objeto de colección'}
+                </p>
+
+                <p
+                  className="
+                    text-[11px]
+                    text-white/60
+                  "
+                >
+                  × {item.cantidad ?? 1}
+                </p>
+
+              </div>
+
+              <p
+                className="
+                  mt-3
+                  text-[12px]
+                  text-white/45
+                "
+              >
+                {(
+                  item.precio *
+                  (item.cantidad ?? 1)
+                ).toLocaleString('es-CL')}{' '}
+                CLP
+              </p>
+
+            </div>
 
           </div>
 
-        </div>
+        ))}
 
       </div>
 
-      {/* Registro */}
+      {/* REGISTRO */}
 
       <div
         className="
@@ -192,11 +231,16 @@ export default function OrderSummary() {
           <div className="flex justify-between">
 
             <span className="text-[12px] text-white/40">
-              Pieza
+              Piezas
             </span>
 
             <span className="text-[12px] text-white/80">
-              Nº automático
+              {items.reduce(
+                (sum, item) =>
+                  sum +
+                  (item.cantidad ?? 1),
+                0
+              )}
             </span>
 
           </div>
@@ -205,25 +249,87 @@ export default function OrderSummary() {
 
       </div>
 
-      {/* Esto empuja el botón abajo */}
+      {/* TOTAL */}
 
-      <div className="flex-1" />
+      <div
+        className="
+          mt-5
+          pt-5
+          border-t
+          border-white/10
+        "
+      >
 
-      {/* Botón */}
+        <div
+          className="
+            flex
+            justify-between
+            items-center
+          "
+        >
+
+          <span
+            className="
+              uppercase
+              tracking-[0.35em]
+              text-[9px]
+              text-white/30
+            "
+          >
+            TOTAL
+          </span>
+
+          <div
+            className="
+              flex
+              items-end
+              gap-2
+            "
+          >
+
+            <span
+              className="
+                text-[18px]
+                font-extralight
+              "
+            >
+              {total.toLocaleString(
+                'es-CL'
+              )}
+            </span>
+
+            <span
+              className="
+                uppercase
+                tracking-[0.30em]
+                text-[9px]
+                text-white/35
+              "
+            >
+              CLP
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* BOTÓN */}
 
       <button
-      onClick={() => router.push('/confirmation')}
+        onClick={() =>
+          router.push('/confirmation')
+        }
         className="
+          mt-5
           w-full
           h-[52px]
-
           bg-white
           text-black
-
           uppercase
           tracking-[0.55em]
           text-[10px]
-
           hover:bg-neutral-200
           transition-all
           duration-300

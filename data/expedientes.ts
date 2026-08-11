@@ -60,33 +60,35 @@ y establece el inicio del sistema documental que acompañará cada colección fu
     año: "2026",
 
     manifiesto: `
-Costa Sport representa la primera colaboración oficial de LT90.
-
-No fue solamente una alianza.
-
-Fue la unión entre la cultura de la costa y la identidad de LT90.
-
-Cada pieza representa trabajo,
-disciplina
-y pertenencia.
+Costa Sport representa la primera colaboración oficial dentro de LT90.
+No nació únicamente para unir dos nombres.
+Fue concebida para demostrar que una colaboración puede construir identidad sin perder autenticidad.
+Cada decisión visual, cada material y cada detalle fueron desarrollados bajo un mismo principio:
+crear piezas capaces de permanecer relevantes más allá de una temporada.
+Costa Sport inaugura una nueva línea dentro del Archivo LT90.
+Un espacio donde las colaboraciones dejan de ser campañas temporales para convertirse 
+en parte permanente de la historia del movimiento.
+Porque una colaboración puede terminar.
+Pero su legado permanece registrado para siempre.
 `,
 
     concepto: `
-Costa Sport nació como una colaboración para unir el deporte,
-la cultura urbana
-y el lenguaje visual de LT90.
+Costa Sport fue concebido como el primer encuentro entre dos identidades que compartían una misma visión del diseño y la cultura.
+Antes de producir la primera pieza se definieron criterios estéticos, materiales y narrativos para asegurar que la colaboración
+pudiera conservar valor con el paso del tiempo. El objetivo nunca fue desarrollar una colección comercial.
+Fue construir un registro capaz de documentar el nacimiento de una nueva etapa dentro del universo LT90.
 `,
 
     produccion: `
-El desarrollo contempló pruebas de materiales,
-bordados,
-prototipos
-y sesiones fotográficas antes del lanzamiento oficial.
+El proceso contempló meses de desarrollo entre pruebas textiles, selección de acabados y diferentes versiones de cada prototipo.
+Cada muestra fue utilizada para ajustar proporciones, materiales y detalles antes de iniciar la producción definitiva.
+De forma paralela se realizaron las sesiones audiovisuales, registros fotográficos y documentación que hoy forman parte permanente del Archivo LT90.
 `,
 
     lanzamiento: `
-La colaboración marcó el primer proyecto conjunto del Archivo LT90,
-quedando registrada como uno de los expedientes fundacionales.
+La presentación oficial de Costa Sport marcó el inicio de la primera colaboración registrada dentro del Archivo LT90.
+Cada unidad producida quedó asociada a esta etapa fundacional y representa el comienzo de una línea de colaboraciones documentadas cronológicamente.
+Más que una colección limitada, Costa Sport permanece como evidencia del momento en que el movimiento comenzó a expandir su identidad hacia nuevos proyectos compartidos.
 `,
 
     videoVertical: "/archive/archive-videos/costa-vertical.mp4",
@@ -122,30 +124,33 @@ quedando registrada como uno de los expedientes fundacionales.
     año: "2026",
 
     manifiesto: `
-WORLD DIVISION representa el inicio del movimiento LT90.
-
-No es solamente un evento.
-
-Es la primera reunión del LTEAM.
-
-Aquí comienza la historia que seguirá creciendo con cada colección.
+World Division representa el nacimiento de la primera experiencia presencial de LT90.
+No fue diseñado únicamente como un evento.
+Fue concebido como el punto donde las personas 
+dejaron de observar el proyecto para comenzar a formar parte de él.
+Cada espacio, cada registro audiovisual y cada encuentro respondieron a una misma intención:
+transformar una identidad digital en una comunidad real.
+World Division inaugura la historia de los encuentros oficiales.
+Porque un evento puede terminar.
+Pero el momento en que una comunidad comienza permanece registrado para siempre.
 `,
 
     concepto: `
-WORLD DIVISION fue concebido como la primera experiencia presencial
-del universo LT90.
+World Division nació con la intención de construir el primer espacio físico donde la identidad de LT90 pudiera experimentarse fuera de las pantallas.
+Desde su planificación se entendió que el encuentro debía ser documentado como parte permanente del Archivo.
+Cada elemento fue pensado para representar el inicio de una nueva etapa donde la comunidad comenzaría a convertirse en protagonista del proyecto.
 `,
 
     produccion: `
-Se documentó el montaje,
-la producción,
-las sesiones audiovisuales
-y la preparación del lanzamiento.
+El desarrollo incluyó planificación logística, dirección audiovisual, diseño espacial y producción de contenido previo al lanzamiento.
+Cada sesión permitió registrar tanto la construcción del evento como la interacción entre los asistentes y el universo visual de LT90.
+Todo el material generado durante este proceso fue incorporado como documentación histórica del movimiento.
 `,
 
     lanzamiento: `
-Con WORLD DIVISION comienza oficialmente la documentación de los eventos LT90
-dentro del Archivo.
+La realización de World Division marcó el inicio oficial de los encuentros registrados dentro del Archivo LT90.
+Cada fotografía, cada grabación y cada documento conservan el primer momento en que la comunidad pudo reunirse bajo una misma identidad.
+Más que un evento aislado, World Division permanece como el punto de partida de todas las experiencias presenciales que formarán parte del movimiento.
 `,
 
     videoVertical: "/archive/archive-videos/division-vertical.mp4",
@@ -181,28 +186,38 @@ dentro del Archivo.
     año: "2026",
 
     manifiesto: `
-La Ruta documenta el recorrido creativo de LT90.
+La Ruta documenta el recorrido creativo que dio forma al universo LT90.
 
-No es un lanzamiento.
-
-Es el registro del camino.
+No representa un lanzamiento específico.
+Representa el camino que permitió que cada proyecto pudiera existir.
+Cada decisión, cada prueba y cada avance fueron registrados con la intención de conservar
+el proceso tanto como el resultado final.
+La Ruta existe para recordar que ninguna colección aparece de manera espontánea.
+Porque las piezas terminadas cuentan una historia.
+Pero el camino que las hizo posibles también merece permanecer.
 `,
 
     concepto: `
-Proyecto destinado a registrar el desarrollo del movimiento LT90
-desde sus primeras ideas hasta su consolidación.
+La Ruta fue concebida como un registro permanente del desarrollo creativo detrás de LT90.
+Desde las primeras ideas hasta la consolidación de cada proyecto, 
+el objetivo siempre fue conservar evidencia del proceso completo.
+No documenta únicamente resultados.
+Documenta la evolución de una identidad construida paso a paso.
 `,
 
     produccion: `
-Compila procesos,
-bocetos,
-viajes
-y registros creativos.
+Durante este recorrido se recopilaron bocetos, referencias visuales,
+pruebas de diseño, registros de viaje y documentación creativa.
+Cada elemento fue organizado para conservar el contexto en que las decisiones fueron tomadas 
+y permitir comprender la evolución del proyecto con el paso del tiempo.
+Todo este material forma parte del patrimonio documental del Archivo LT90.
 `,
 
     lanzamiento: `
-Este expediente permanecerá abierto
-y crecerá constantemente.
+La Ruta permanece como un proyecto abierto que continuará creciendo junto con el desarrollo del movimiento.
+Cada nueva colección, colaboración o experiencia incorporará nuevas páginas a este recorrido,
+permitiendo reconstruir la historia completa de LT90 desde su origen.
+Más que una colección, La Ruta constituye la memoria viva del proyecto.
 `,
 
     videoVertical: "/archive/archive-videos/ruta-vertical.mp4",

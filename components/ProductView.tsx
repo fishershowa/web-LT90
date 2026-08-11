@@ -41,6 +41,7 @@ const [selectedIndex, setSelectedIndex] = useState(0)
   const [showGallery, setShowGallery] = useState(false)
   const [showCart, setShowCart] = useState(false)
   const { setPurchase } = usePurchase()
+  const esPassport = nombre === 'LT90 PASSPORT'
  
 useEffect(() => {
 
@@ -264,38 +265,40 @@ cursor-zoom-in
 
 </div>
 
-            <button
-  onClick={() => {
+            {!esPassport && (
+  <button
+    onClick={() => {
+      setPurchase({
+        nombre,
+        imagen: selectedImage,
+        precio,
+        talla: selectedSize,
+        tipo,
+        cantidad: 1,
+        maxCantidad: 1,
+      })
 
-    setPurchase({
-      nombre,
-      imagen: selectedImage,
-      precio,
-      talla: selectedSize,
-      tipo,
-    })
+      setShowCart(true)
+    }}
+    className="
+      mt-14
+      h-[56px]
+      bg-white
+      text-black
 
-    setShowCart(true)
+      uppercase
+      tracking-[0.55em]
+      text-[11px]
+      font-medium
 
-  }}
-  className="
-    mt-14
-    h-[56px]
-    bg-white
-    text-black
-
-    uppercase
-    tracking-[0.55em]
-    text-[11px]
-    font-medium
-
-    hover:bg-neutral-200
-    transition-all
-    duration-300
-  "
->
-  ADQUIRIR PIEZA
-</button>
+      hover:bg-neutral-200
+      transition-all
+      duration-300
+    "
+  >
+    ADQUIRIR PIEZA
+  </button>
+)}
           </div>
 
         </div>
@@ -310,12 +313,12 @@ cursor-zoom-in
 <CartDrawer
   open={showCart}
   onClose={() => setShowCart(false)}
-
   nombre={nombre}
   imagen={selectedImage}
   precio={precio}
   talla={selectedSize}
   tipo={tipo}
+  onContinueShopping={onBack}
 />
 {showGallery && (
 

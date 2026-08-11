@@ -3,44 +3,155 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { useUser } from '@/contexts/UserContext'
+import { usePurchase } from '@/contexts/PurchaseContext'
 
 export default function ConfirmationPage() {
   const router = useRouter()
-const { user, setUser } = useUser()
+  const { user, setUser } = useUser()
+  const { cart } = usePurchase()
+
   useEffect(() => {
+    if (!user) {
+      return
+    }
 
-  if (user && user.socio === null) {
+    /*
+     * Si el usuario ya fue incorporado,
+     * no volvemos a asignarle otro número.
+     */
+    if (user.socio !== null) {
+      const timer = setTimeout(() => {
+        router.push('/account')
+      }, 3000)
 
-    const numeroSocio = Math.floor(Math.random() * 9000) + 1000
+      return () => clearTimeout(timer)
+    }
 
-    const numeroPasaporte =
-      `LT90-${new Date().getFullYear()}-${numeroSocio}`
+    /*
+     * CONTADOR DROP 001
+     *
+     * 1  → primer comprador
+     * 90 → último Founding Member
+     * 91 → primer socio normal
+     */
+    const contadorKey = 'lt90_drop001_incorporaciones'
 
-    setUser({
+    const registroKey =
+      `lt90_drop001_registro_${user.correo}`
 
-      ...user,
+    /*
+     * Comprobamos si este correo ya fue incorporado.
+     */
+    const registroExistente =
+      localStorage.getItem(registroKey)
 
-      socio: numeroSocio,
+    if (!registroExistente) {
+      const contadorGuardado =
+        localStorage.getItem(contadorKey)
 
-      pasaporte: numeroPasaporte,
+      const siguienteNumero =
+        contadorGuardado
+          ? Number(contadorGuardado) + 1
+          : 1
 
-    })
+      /*
+       * Guardamos inmediatamente el nuevo contador.
+       */
+      localStorage.setItem(
+        contadorKey,
+        String(siguienteNumero)
+      )
 
-  }
+      /*
+       * Los primeros 90 reciben Founding Member.
+       */
+      const esFoundingMember =
+        siguienteNumero <= 90
 
-  const timer = setTimeout(() => {
+     const rango: 'FOUNDING_MEMBER' | 'SOCIO' =
+  esFoundingMember
+    ? 'FOUNDING_MEMBER'
+    : 'SOCIO'
 
-    router.push('/account')
+      /*
+       * Número de Pasaporte.
+       */
+      const numeroPasaporte =
+        `LT90-${new Date().getFullYear()}-${String(
+          siguienteNumero
+        ).padStart(5, '0')}`
 
-  }, 3000)
+      /*
+       * Conservamos los stickers que ya pudiera tener
+       * el usuario.
+       */
+      const stickersActuales =
+        user.stickers ?? []
 
-  return () => clearTimeout(timer)
+      /*
+       * Founding Member recibe su sticker automáticamente.
+       */
+      const stickersActualizados =
+        esFoundingMember
+          ? Array.from(
+              new Set([
+                ...stickersActuales,
+                'FOUNDING_MEMBER',
+              ])
+            )
+          : stickersActuales
 
-}, [router, user, setUser])
+      /*
+       * Actualizamos el perfil del socio.
+       */
+      const usuarioActualizado = {
+  ...user,
+  socio: siguienteNumero,
+  pasaporte: numeroPasaporte,
+  rango,
+  stickers: stickersActualizados,
+  drops: Array.from(
+  new Set([
+    ...(user.drops ?? []),
+    '001 — WORLD',
+  ])
+),
+piezas: Array.from(
+  new Set([
+    ...(user.piezas ?? []),
+    ...cart.map((item) => item.nombre),
+  ])
+),
+}
+
+      setUser(usuarioActualizado)
+
+      /*
+       * Registro de seguridad para que el mismo correo
+       * no vuelva a consumir un número.
+       */
+      localStorage.setItem(
+        registroKey,
+        JSON.stringify({
+          socio: siguienteNumero,
+          pasaporte: numeroPasaporte,
+          rango,
+        })
+      )
+    }
+
+    /*
+     * Después de validar, volvemos al Pasaporte digital.
+     */
+    const timer = setTimeout(() => {
+      router.push('/account')
+    }, 3000)
+
+    return () => clearTimeout(timer)
+  }, [router, user, setUser, cart])
 
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center">
-
+    <main className="min-h-screen flex items-center justify-center px-6">
       <div className="w-full max-w-[620px]">
 
         <p
@@ -75,78 +186,125 @@ const { user, setUser } = useUser()
             space-y-8
           "
         >
+
+          {/* IDENTIDAD */}
+
           <div className="flex justify-between">
-            <span className="tracking-[0.20em] uppercase text-[12px] text-white/45">
+            <span
+              className="
+                tracking-[0.20em]
+                uppercase
+                text-[12px]
+                text-white/45
+              "
+            >
               Identidad
             </span>
 
             <span
-  className="
-    text-[#C9A96B]
-    text-[18px]
-    font-light
-  "
->
-  ✓
-</span>
+              className="
+                text-[#C9A96B]
+                text-[18px]
+                font-light
+              "
+            >
+              ✓
+            </span>
           </div>
 
+          {/* PASAPORTE */}
+
           <div className="flex justify-between">
-            <span className="tracking-[0.20em] uppercase text-[12px] text-white/45">
+            <span
+              className="
+                tracking-[0.20em]
+                uppercase
+                text-[12px]
+                text-white/45
+              "
+            >
               Pasaporte
             </span>
 
             <span
-  className="
-    text-[#C9A96B]
-    text-[18px]
-    font-light
-  "
->
-  ✓
-</span>
+              className="
+                text-[#C9A96B]
+                text-[18px]
+                font-light
+              "
+            >
+              ✓
+            </span>
           </div>
 
+          {/* INCORPORACIÓN */}
+
           <div className="flex justify-between">
-            <span className="tracking-[0.20em] uppercase text-[12px] text-white/45">
-              Disponibilidad
+            <span
+              className="
+                tracking-[0.20em]
+                uppercase
+                text-[12px]
+                text-white/45
+              "
+            >
+              Incorporación
             </span>
 
             <span
-  className="
-    text-[#C9A96B]
-    text-[18px]
-    font-light
-  "
->
-  ✓
-</span>
+              className="
+                text-[#C9A96B]
+                text-[18px]
+                font-light
+              "
+            >
+              ✓
+            </span>
           </div>
+
+          {/* RANGO */}
 
           <div className="flex justify-between">
-            <span className="tracking-[0.20em] uppercase text-[12px] text-white/45">
-              Pieza
+            <span
+              className="
+                tracking-[0.20em]
+                uppercase
+                text-[12px]
+                text-white/45
+              "
+            >
+              Rango
             </span>
 
-            <span className="animate-pulse text-white/70">
-              ...
+            <span
+              className="
+                text-white/70
+                text-[12px]
+                uppercase
+                tracking-[0.20em]
+              "
+            >
+              {user?.rango === 'FOUNDING_MEMBER'
+                ? 'FOUNDING MEMBER'
+                : 'SOCIO'}
             </span>
           </div>
+
         </div>
 
         <p
-  className="
-    mt-16
-    text-[13px]
-    leading-8
-    text-white/40
-  "
->
-  Integrando la pieza al Pasaporte y generando su registro oficial.
-</p>
+          className="
+            mt-16
+            text-[13px]
+            leading-8
+            text-white/40
+          "
+        >
+          Integrando la pieza al Pasaporte y generando
+          su registro oficial.
+        </p>
 
       </div>
-
     </main>
   )
 }

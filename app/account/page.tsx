@@ -3,11 +3,13 @@
 import { useAuth } from '@/lib/auth-context'
 import Link from 'next/link'
 import { useRef, useState } from 'react'
+import { useUser } from '@/contexts/UserContext'
 import ProductCard from '@/components/ProductCard'
 import ProductViewer from '@/components/ProductViewer'
 export default function AccountPage() {
   const [selectedPiece, setSelectedPiece] = useState<number | null>(null)
   const { user, role, login, logout } = useAuth()
+  const { user: passportUser } = useUser()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -185,14 +187,16 @@ const collectionRef = useRef<HTMLDivElement>(null)
     </p>
 
     <p className="mt-2 text-[60px] font-light tracking-[0.24em] leading-none">
-      00001
+      {passportUser?.socio ?? '—'}
     </p>
 
     <div className="mt-4 w-20 h-px bg-white/10"></div>
 
-    <p className="mt-4 text-sm uppercase tracking-[0.22em] text-[#C6A86A]">
-      Founding Member
-    </p>
+   <p className="mt-4 text-sm uppercase tracking-[0.22em] text-[#C6A86A]">
+  {passportUser?.rango === 'FOUNDING_MEMBER'
+    ? 'FOUNDING MEMBER'
+    : 'SOCIO'}
+</p>
 </div>
 <img
   src="/identity/world-division-seal.svg"
@@ -237,8 +241,10 @@ const collectionRef = useRef<HTMLDivElement>(null)
       </p>
 
       <p className="text-lg">
-        {user?.name}
-      </p>
+  {passportUser?.nombre && passportUser?.apellido
+    ? `${passportUser.nombre} ${passportUser.apellido}`
+    : '—'}
+</p>
 
     </div>
 
@@ -249,8 +255,8 @@ const collectionRef = useRef<HTMLDivElement>(null)
       </p>
 
       <p className="text-sm break-all">
-        {user?.email}
-      </p>
+  {passportUser?.correo ?? '—'}
+</p>
 
     </div>
 
@@ -260,7 +266,7 @@ const collectionRef = useRef<HTMLDivElement>(null)
         Ciudad
       </p>
 
-      <p>Santiago</p>
+      <p>{passportUser?.ciudad ?? '—'}</p>
 
     </div>
 
@@ -270,7 +276,7 @@ const collectionRef = useRef<HTMLDivElement>(null)
         País
       </p>
 
-      <p>Chile</p>
+      <p>{passportUser?.pais ?? '—'}</p>
 
     </div>
 
@@ -280,7 +286,7 @@ const collectionRef = useRef<HTMLDivElement>(null)
         Ingreso
       </p>
 
-      <p>2026</p>
+      <p>{passportUser?.pasaporte?.split('-')[1] ?? '—'}</p>
 
     </div>
 
@@ -303,8 +309,8 @@ const collectionRef = useRef<HTMLDivElement>(null)
       </p>
 
       <p className="text-xl">
-        01
-      </p>
+  {passportUser?.drops?.length ?? 0}
+</p>
 
     </div>
 
@@ -315,8 +321,8 @@ const collectionRef = useRef<HTMLDivElement>(null)
       </p>
 
       <p className="text-xl">
-        02
-      </p>
+  {String(passportUser?.piezas?.length ?? 0).padStart(2, '0')}
+</p>
 
     </div>
 

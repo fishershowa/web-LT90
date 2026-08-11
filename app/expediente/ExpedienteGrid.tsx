@@ -168,18 +168,21 @@ const expediente = selectedItem
 
  <div className="col-span-4 flex justify-start items-start -ml-12">
 
-  <video
+ 
+<video
+  key={expediente.videoVertical}
   autoPlay
   muted
   loop
   playsInline
   className="w-[360px] h-[500px] object-cover rounded-md"
 >
-      <source
-  src="/archive/archive-videos/world-vertical.mp4"
-  type="video/mp4"
-/>
-    </video>
+  <source
+    src={expediente.videoVertical}
+    type="video/mp4"
+  />
+</video>
+
 
   </div>
 
@@ -293,8 +296,10 @@ const expediente = selectedItem
     </div>
 
   </div>
-<div className="mt-20">
+
+  <div className="mt-20">
   <video
+    key={expediente.videoHorizontal}
     autoPlay
     muted
     loop
@@ -308,6 +313,7 @@ const expediente = selectedItem
     />
   </video>
 </div>
+
 
 </section>
 

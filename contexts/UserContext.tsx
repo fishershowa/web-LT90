@@ -17,6 +17,11 @@ export type UserData = {
 
   socio: number | null
   pasaporte: string | null
+
+  rango: 'FOUNDING_MEMBER' | 'SOCIO'
+stickers: string[]
+drops: string[]
+piezas: string[]
 }
 
 type UserContextType = {

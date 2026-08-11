@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useUser } from "@/contexts/UserContext";
 
 export default function CheckoutForm() {
@@ -13,7 +13,22 @@ const [apellido, setApellido] = useState("");
 const [correo, setCorreo] = useState("");
 const [pais, setPais] = useState("");
 const [ciudad, setCiudad] = useState("");
+useEffect(() => {
+  setUser({
+  nombre,
+  apellido,
+  correo,
+  pais,
+  ciudad,
+  socio: null,
+  pasaporte: null,
+  rango: 'SOCIO',
+  stickers: [],
+  drops: [],
+})
+}, [nombre, apellido, correo, pais, ciudad, setUser])
   return (
+    
     <section>
 
       {/* IDENTIDAD */}
